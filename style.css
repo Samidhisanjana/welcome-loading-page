@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(80deg, #110e1f, #1b1730);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+.text {
+    width: 100%;
+    height: 100vh;
+    background-image: url(267576.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    font-family: Painting With Chocalte;
+    font-size: 80px;
+    text-align: center;
+    line-height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d2006b;
+    -webkit-background-clip: text;
+    pointer-events: none;
+    animation: anima1 2s infinite, anim2 10s forwards;
+
+
+}
+
+@keyframes anima1 {
+    0% {
+        background-image: url(267576.jpg);
+    }
+
+    10% {
+        background-image: url(16_Cleveland.jpg);
+    }
+
+    20% {
+        background-image: url(Purple-space-nebula-HD-wallpaper-1280x960.jpg);
+    }
+
+    30% {
+        background-image: url(th1.jpg);
+    }
+
+    40% {
+        background-image: url(th2.jpg);
+    }
+
+    50% {
+        background-image: url(th.jpg);
+    }
+
+    60% {
+        background-image: url(th3.jpg);
+    }
+
+    70% {
+        background-image: url(th4.jpg);
+    }
+
+    80% {
+        background-image: url(th5.jpg);
+    }
+
+    90% {
+        background-image: url(th6.jpg);
+    }
+
+    100% {
+        background-image: url(th7.jpg);
+    }
+}
+
+@keyframes anim2 {
+    from {
+        color: #d2006d;
+    }
+
+    to {
+        color: transparent;
+    }
+}
+
+.tit {
+    font-family: monospace;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar {
+    width: 80px;
+    height: 2px;
+    background-color: #282246;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+
+}
+
+#fill {
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}

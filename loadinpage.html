@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="text">
+            WELCOME
+        </div>
+        <div class="tit">
+            International Center For Innovation and Invention
+        </div>
+        <div class="bar">
+            <div id="fill">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var progress = 0;
+    document.onreadystatechange = function () {
+        if (document.readyState == "interactive") {
+            var allElement = $("*");
+            var length = allElement.length;
+            for (var i = 0; i < length; i++) {
+                set_element(allElement[i], length);
+            }
+
+        }
+
+    }
+
+    function set_element(element, totalElement) {
+        var percetage = 100 / totalElement;
+        if ($(element).length == 1) {
+            $("#fill").animate({
+                width: progress + percetage + "%"
+            }, 1000, function () {
+
+
+                if (document.getElementById("fill").style.width == "100%") {
+                    $(".main").fadeOut(500);
+                    gotoIcii();
+
+                }
+            });
+            progress = progress + percetage;
+
+        }
+
+    }
+
+    function gotoIcii() {
+        window.location.replace("https://icii.espace.nsbm.ac.lk/");
+    }
+</script>
+
+</html>
