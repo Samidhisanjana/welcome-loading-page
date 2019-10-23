@@ -1,2 +1,2 @@
 # welcome-loading-page
-loading page
+this is a loading page
